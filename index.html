@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link-with-in-the-page</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #logo {
+            width: 100%;
+            height: 100px;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        #menu {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            position: fixed;
+            top: 0;
+        }
+
+        #menu a {
+            color: aliceblue;
+            font-size: 2rem;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        #home {
+            width: 100%;
+            height: 100vh;
+            /* background-color:grey; */
+            background: url("asset/img/home-page.jpg");
+            background-size: cover;
+
+        }
+
+        #home h1 {
+            text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        #home h3 {
+            text-shadow: 0 0 10px #FF0000, 0 0 10px #0000FF;
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        #home a {
+            text-decoration: none;
+        }
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #42275a 0%, #734b6d 51%, #42275a 100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #about {
+            width: 100%;
+            /* height: 100vh; */
+            background-color: black;
+            /* text-align: justify; */
+            font-size: 3rem;
+            color: white;
+            text-align: justify;
+        }
+
+        #skills {
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        #contact {
+            width: 100%;
+            height: 100vh;
+            background-color: grey;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .container {
+            width: 80%;
+            /* background-color: aqua; */
+            /* margin: auto; */
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .d-justify-content-center {
+            justify-content: center;
+        }
+
+        .d-justify-content-space-around {
+            justify-content: space-around;
+        }
+
+        .d-flex-direction-column {
+            flex-direction: column;
+        }
+
+
+        .d-align-item-center {
+            align-items: center;
+        }
+
+        .d-justify-content-space-evenly {
+            justify-content: space-evenly;
+        }
+
+        .para {
+            font-size: 1.5rem !important;
+        }
+
+
+        .w-300 {
+            width: 300px;
+        }
+
+        .w-400 {
+            width: 400px;
+        }
+
+        .w-30 {
+            width: 50%;
+        }
+
+        .mt-30 {
+            margin-top: 30px;
+        }
+
+        .mb-30 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- menu-bar section starts here -->
+    <nav id="menu" class="d-flex d-justify-content-space-around d-align-item-center">
+        <div>
+            <a href="#" id="logo">Abishek Aravinth</a>
+        </div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <!-- menu-bar section end here -->
+    <!-- hero-section starts here -->
+    <section id="home" class="d-flex d-justify-content-center d-align-item-center d-flex-direction-column">
+        <h1>Abishek Aravinth</h1>
+        <h3>Front-End Developer|Website Developer</h3>
+        <a href="#" class="btn-grad">Download Resume</a>
+
+    </section>
+    <!-- hero-section end here -->
+    <section id="about" class="d-flex d-justify-content-center d-align-item-center d-flex-direction-column">
+
+
+        <div class="container d-flex d-flex-direction-column d-justify-content-center d-align-item-center">
+
+
+            <div class="mt-30 mb-30">
+                <h1>About</h1>
+            </div>
+            <div class="d-flex  d-justify-content-evenly d-align-item-center">
+
+
+                <div class="w-30">
+                    <img src="asset/img/profile-pic.png">
+                </div>
+                <div class="para w-30">
+
+                    <h2>I'm Abishek Aravinth</h2>
+
+                    <p> currently pursuing a Bachelor of Technology (BTECH) degree in Information Technology at SRM
+                        College.
+                        Throughout my academic journey, I have cultivated a profound interest and substantial
+                        experience in
+                        the
+                        field of User Interface (UI) development. This interest has been nurtured through both my
+                        coursework
+                        and
+                        various practical experiences, allowing me to develop a solid foundation in creating
+                        visually
+                        appealing
+                        and user-friendly interfaces. An individual who is creative and wants work in pragmatic way
+                        in an
+                        organization where i can show my talent and enhance my skills to meet company goals and
+                        objective
+                        with
+                        full integrity and zest.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="skills" class="d-flex  d-justify-content-center d-align-item-center ">
+
+        <div class="para w-40">
+            <img src="asset/img/html.png">
+            <p>Proficient in creating structured and visually appealing web pages using HTML, with a strong
+                understanding of modern design principles and best practices</p>
+        </div>
+        <div class="para w-40">
+            <img src="asset/img/css.png">
+            <p> Proficient in creating structured and visually appealing web pages using CSS, with a strong
+                understanding of modern design principles and best practices</p>
+        </div>
+        <div class="para w-40">
+            <img src="asset/img/js.png">
+            <p> Skilled in using JavaScript to add interactivity and dynamic behavior to web pages, including experience
+                with popular libraries and frameworks such as jQuery, React, and Angular.</p>
+        </div>
+        <div class="para w-40">
+            <h1>React</h1>
+            <img src="asset/img/react.png" width="150px">
+            <p> I have a solid understanding of React, a popular JavaScript library for building dynamic user
+                interfaces. My experience includes developing responsive and interactive web applications.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact" class="d-flex d-justify-content-center d-align-item-center">
+        <h1>Contact</h1>
+
+
+    </section>
+
+
+</body>
+
+</html>
